@@ -138,4 +138,4 @@ Cypress.Commands.add('delay', () => {
     let delayInSeconds = Math.round(glitchUser - normalUser)
     cy.log(`Performance glitch is seen by ${delayInSeconds}seconds`);
   }
-})
+}) 
