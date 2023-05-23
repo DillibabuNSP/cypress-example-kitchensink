@@ -34,13 +34,13 @@
 //    docker logs blue-ocean
 
 pipeline {
-   agent {
-  //   // this image provides everything needed to run Cypress
-  //   docker {
-      
-  //     image 'cypress/base:18.14.1'
-  //   }
-   }
+  agent {
+    // this image provides everything needed to run Cypress
+    docker {
+      label 'default'
+      image 'cypress/base:18.14.1'
+    }
+  }
 
   stages {
     // first stage installs node dependencies and Cypress binary
