@@ -37,6 +37,7 @@ pipeline {
   agent {
     // this image provides everything needed to run Cypress
     docker {
+      label 'default'
       image 'cypress/base:18.14.1'
     }
   }
